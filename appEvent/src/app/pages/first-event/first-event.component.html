@@ -1,0 +1,28 @@
+<h1 class="title">Primeiro Evento</h1>
+<hr />
+<div class="container">
+  <label>Evento de Clique</label>
+  <button
+    class="button"
+    mat-raised-button
+    color="primary"
+    (click)="cliqueBotao('Raphael')"
+  >
+    Clique Aqui!
+  </button>
+</div>
+
+<div class="eventoClique">{{ texto }}</div>
+
+<div *ngIf="eventoClicado">
+  <img src="https://static.wixstatic.com/media/c00c65_63ca6982dd2a4d7f9cc591b08dce8ba2~mv2.png/v1/fill/w_1225,h_689,al_c,q_90,usm_0.66_1.00_0.01/c00c65_63ca6982dd2a4d7f9cc591b08dce8ba2~mv2.webp">
+</div>
+
+<div>
+  <ul *ngFor="let carro of carros; index as indice">
+    <li>
+      <p>{{ indice+1 + " - " + (carro.nome | uppercase) + " - " + (carro.marca| uppercase) + " - " + carro.dados.km + "km - " + (carro.dados.cor| uppercase)}}</p>
+
+    </li>
+  </ul>
+</div>

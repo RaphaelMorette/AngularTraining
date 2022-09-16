@@ -1,0 +1,31 @@
+<p>
+  Filtrado por: {{marca}}
+</p>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Veículo</th>
+      <th scope="col">Marca</th>
+      <th scope="col">Ano</th>
+      <th scope="col">Cor</th>
+      <th scope="col">BodyKit</th>
+      <th scope="col">Kit-ângulo</th>
+      <th scope="col">Swap de motor</th>
+      <th scope="col">Cambagem-dianteira</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let carro of carrosFiltrados; index as indice">
+      <td>{{ indice + 1 }}</td>
+      <td>{{ carro.veiculo }}</td>
+      <td>{{ carro.marca }}</td>
+      <td>{{ carro.ano }}</td>
+      <td>{{ carro.cor }}</td>
+      <td>{{ carro.especificacoes.body_kit }}</td>
+      <td>{{ carro.especificacoes.kit_angulo }}</td>
+      <td>{{ carro.especificacoes.swap_motor }}</td>
+      <td>{{ carro.especificacoes.cambagem_dianteira }}</td>
+    </tr>
+  </tbody>
+</table>

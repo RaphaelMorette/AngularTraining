@@ -1,0 +1,54 @@
+<h1>Lista de carros disponíveis</h1>
+<hr />
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Veículo</th>
+      <th scope="col">Marca</th>
+      <th scope="col">Ano</th>
+      <th scope="col">Cor</th>
+      <th scope="col">BodyKit</th>
+      <th scope="col">Kit-ângulo</th>
+      <th scope="col">Swap de motor</th>
+      <th scope="col">Cambagem-dianteira</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let carro of carros; index as indice">
+      <td>{{ indice + 1 }}</td>
+      <td>{{ carro.veiculo }}</td>
+      <td>{{ carro.marca }}</td>
+      <td>{{ carro.ano }}</td>
+      <td>{{ carro.cor }}</td>
+      <td>{{ carro.especificacoes.body_kit }}</td>
+      <td>{{ carro.especificacoes.kit_angulo }}</td>
+      <td>{{ carro.especificacoes.swap_motor }}</td>
+      <td>{{ carro.especificacoes.cambagem_dianteira }}</td>
+    </tr>
+  </tbody>
+</table>
+<div class="botoes">
+  <button type="button" class="btn btn-outline-secondary" (click)="filtrar('Nissan')" [disabled]="desabilitar" >Nissan</button>
+  <button type="button" class="btn btn-outline-secondary" (click)="filtrar('Subaru')" [disabled]="desabilitar" >Subaru</button>
+  <button type="button" class="btn btn-outline-secondary" (click)="filtrar('Toyota')" [disabled]="desabilitar" >Toyota</button>
+  <button type="button" class="btn btn-outline-primary" (click)="filtrar('Todos')">Todos</button>
+
+
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Todos</button>
+    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+      <span class="visually-hidden">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" (click)="filtrar('Nissan')">Nissan</a></li>
+      <li><a class="dropdown-item" (click)="filtrar('Toyota')">Toyota</a></li>
+      <li><a class="dropdown-item" (click)="filtrar('Subaru')">Subaru</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" (click)="filtrar('Todos')">Todos</a></li>
+    </ul>
+  </div>
+</div>
+<div *ngIf="mostraDetail" style="margin-top: 20px;">
+  <app-json-detail [carrosFiltrados] = "carros" [marca] = "marca"></app-json-detail>
+</div>

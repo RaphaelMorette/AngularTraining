@@ -1,0 +1,23 @@
+body {
+  background-color: #f0f0f0;
+}
+.title {
+  text-align: center;
+  background-color:aqua;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1em 0.5em;
+  gap: 1em;
+}
+.container label {
+  font-size: 18px;
+
+}
+.container button {
+  width: 10em;
+}
