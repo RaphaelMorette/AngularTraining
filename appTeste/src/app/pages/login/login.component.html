@@ -1,0 +1,32 @@
+<div class="login">
+  <h2>Login</h2>
+  <hr />
+  <div class="form-floating mb-3">
+    <input
+      type="email"
+      class="form-control form-control-lg"
+      id="floatingInput"
+      placeholder="name@example.com"
+      [(ngModel)]="user"
+    />
+    <p class="msgUser"></p>
+    <label for="floatingInput">E-mail</label>
+  </div>
+  <div class="form-floating">
+
+    <input
+      type="password"
+      class="form-control form-control-lg"
+      id="floatingPassword"
+      placeholder="Password"
+      [(ngModel)]="password"
+    />
+    <p class="msgPassword"></p>
+    <label for="floatingPassword">Senha</label>
+  </div>
+  <br />
+  <button type="button" class="btn btn-primary btn-lg" (click)="entrar()">Entrar</button>
+  <hr />
+  <h5>Criar uma conta:</h5>
+  <button type="button" class="btn btn-light btn-lg">Criar</button>
+</div>
