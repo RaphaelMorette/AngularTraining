@@ -12,7 +12,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { FormsModule } from '@angular/forms';
 import { RegisterComponent } from './pages/register/register.component';
 
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { UsersHomeComponent } from './pages/users/users-home/users-home.component';
+import { UsersContentComponent } from './pages/users/users-content/users-content.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { HttpClientModule } from '@angular/common/http'
     LoginComponent,
     ContentComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
+    UsersHomeComponent,
+    UsersContentComponent
   ],
   imports: [
     BrowserModule,

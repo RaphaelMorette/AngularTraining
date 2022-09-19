@@ -1,0 +1,16 @@
+.usersTable {
+  display: flex;
+  height: 132vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxShadow {
+  box-shadow: 10px 10px 17px 0px;
+  height: 120vh;
+}
+
+.usersTable .boxShadow table {
+  width: 100%;
+  height: 120vh;
+}

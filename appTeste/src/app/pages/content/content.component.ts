@@ -9,16 +9,16 @@ import { Component, OnInit } from '@angular/core';
 export class ContentComponent implements OnInit {
   constructor(private _carsService: CarsService) {}
 
-  cars: any[] = []
+  cars: any[] = [];
 
   ngOnInit(): void {
-    this.getCarsData()
+    this.getCarsData();
   }
 
   getCarsData() {
-    this._carsService.getdata().subscribe((data:any[]) => {
-      this.cars = data
-      console.log("Data Response => ",this.cars)
+    this._carsService.getdata().subscribe((data: any[]) => {
+      this.cars = data;
+      console.log('Data Response => ', this.cars);
     });
   }
 }
