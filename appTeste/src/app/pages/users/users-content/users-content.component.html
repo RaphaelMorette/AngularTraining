@@ -11,6 +11,7 @@
         <th scope="col">Phone</th>
         <th scope="col">Website</th>
         <th scope="col">Company</th>
+        <th scope="col">Ações</th>
       </tr>
     </thead>
     <tbody>
@@ -26,6 +27,9 @@
         <td>{{ user.phone }}</td>
         <td>{{ user.website }}</td>
         <td>{{ user.company.name }}</td>
+        <td>
+          <button class="btn btn-primary btn-sm" (click)="goAcessar(user.id)">Acessar</button>
+        </td>
       </tr>
     </tbody>
   </table>

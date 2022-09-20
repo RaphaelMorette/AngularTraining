@@ -1,0 +1,23 @@
+<app-header></app-header>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Descrição</th>
+      <th scope="col">Preco</th>
+      <th scope="col">Categoria_id</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <th scope="row">{{ product.id }}</th>
+      <td>{{ product.nome }}</td>
+      <td>{{ product.descricao }}</td>
+      <td>{{ product.preco }}</td>
+      <td>{{ product.categoria_id }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<app-footer></app-footer>

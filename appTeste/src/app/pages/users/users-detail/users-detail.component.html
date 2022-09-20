@@ -1,0 +1,24 @@
+<app-header></app-header>
+<div style="margin-top: 10px;">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Detalhes usuário
+        </li>
+      </ol>
+    </nav>
+
+  <h1>{{ userData.name }}</h1>
+
+  <p>{{ userData.address.street + " - " + userData.address.zipcode }}</p>
+  <p>{{ userData.email }}</p>
+  <p>{{ userData.phone }}</p>
+  <p>{{ userData.username }}</p>
+  <p>{{ userData.website }}</p>
+  <p>{{ userData.company.name }}</p>
+
+  <button class="btn btn-danger" (click)="goBack()">Voltar</button>
+</div>
+
+<app-footer></app-footer>

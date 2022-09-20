@@ -12,7 +12,11 @@ export class UsersService {
   constructor(private _http: HttpClient) { }
 
   getUsers(): Observable<any> {
-    return this._http.get(this.urlAPI)
+    return this._http.get<any>(this.urlAPI)
+  }
+
+  getOnlyOneUser(id:number): Observable<any> {
+    return this._http.get<any>(this.urlAPI + "/" + id)
   }
 
 }

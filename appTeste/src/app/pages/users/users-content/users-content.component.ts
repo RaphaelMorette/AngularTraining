@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { UsersService } from './../../../services/users.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./users-content.component.css'],
 })
 export class UsersContentComponent implements OnInit {
-  constructor(private _usersService: UsersService) {}
+  constructor(private _usersService: UsersService, private _router:Router) {}
 
   users: any[] = [];
 
@@ -18,7 +19,10 @@ export class UsersContentComponent implements OnInit {
   getUsersData() {
     this._usersService.getUsers().subscribe((data: any[]) => {
       this.users = data;
-      console.log('Data users =>', this.users);
     });
+  }
+
+  goAcessar(id:number) {
+    this._router.navigate(['/users-details', id])
   }
 }

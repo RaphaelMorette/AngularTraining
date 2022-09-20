@@ -1,0 +1,120 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Coca cola",
+      "descricao": "Refrigerante de cola",
+      "preco": 6,
+      "categoria_id": 1
+    },
+    {
+      "id": 2,
+      "nome": "Fanta-laranja",
+      "descricao": "Refrigerante de laranja",
+      "preco": 6,
+      "categoria_id": 1
+    },
+    {
+      "id": 3,
+      "nome": "Fanta-uva",
+      "descricao": "Refrigerante de uva",
+      "preco": 5,
+      "categoria_id": 1
+    },
+    {
+      "id": 4,
+      "nome": "Fanta-guarana",
+      "descricao": "Refrigerante de guarana",
+      "preco": 5,
+      "categoria_id": 1
+    },
+    {
+      "id": 5,
+      "nome": "Coca cola zero",
+      "descricao": "Refrigerante de cola zero açucar",
+      "preco": 6,
+      "categoria_id": 1
+    },
+    {
+      "id": 6,
+      "nome": "Heineken",
+      "descricao": "Cerveja long-neck",
+      "preco": 5.99,
+      "categoria_id": 2
+    },
+    {
+      "id": 7,
+      "nome": "Brahma puro malte",
+      "descricao": "Cerveja Lata puro malte",
+      "preco": 4.39,
+      "categoria_id": 2
+    },
+    {
+      "id": 8,
+      "nome": "Amstel",
+      "descricao": "Cerveja lata",
+      "preco": 3.29,
+      "categoria_id": 2
+    },
+    {
+      "id": 9,
+      "nome": "suco de maracujá",
+      "descricao": "Suco de polpa de maracujá",
+      "preco": 7,
+      "categoria_id": 1
+    },
+    {
+      "id": 10,
+      "nome": "suco de morango",
+      "descricao": "Suco de polpa de morango",
+      "preco": 7,
+      "categoria_id": 1
+    },
+    {
+      "id": 11,
+      "nome": "suco de uva",
+      "descricao": "Suco de polpa de uva",
+      "preco": 7,
+      "categoria_id": 1
+    },
+    {
+      "id": 12,
+      "nome": "suco de abacaxi",
+      "descricao": "Suco de polpa de abacaxi",
+      "preco": 7,
+      "categoria_id": 1
+    },
+    {
+      "id": 13,
+      "nome": "suco de goiaba",
+      "descricao": "Suco de polpa de goiaba",
+      "preco": 7,
+      "categoria_id": 1
+    },
+    {
+      "id": 14,
+      "nome": "suco de caju",
+      "descricao": "Suco de polpa de caju",
+      "preco": 7,
+      "categoria_id": 1
+    },
+    {
+      "id": 15,
+      "nome": "suco de pêssego",
+      "descricao": "Suco de polpa de pêssego",
+      "preco": 7,
+      "categoria_id": 1
+    }
+
+  ],
+  "categorias": [
+    {
+      "id": 1,
+      "nome_categoria": "Bebida não alcoolica"
+    },
+    {
+      "id": 2,
+      "nome_categoria": "Bebidas alcoolicas"
+    }
+  ]
+}

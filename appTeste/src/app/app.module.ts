@@ -14,7 +14,8 @@ import { RegisterComponent } from './pages/register/register.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { UsersHomeComponent } from './pages/users/users-home/users-home.component';
-import { UsersContentComponent } from './pages/users/users-content/users-content.component'
+import { UsersContentComponent } from './pages/users/users-content/users-content.component';
+import { UsersDetailComponent } from './pages/users/users-detail/users-detail.component'
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { UsersContentComponent } from './pages/users/users-content/users-content
     HomeComponent,
     RegisterComponent,
     UsersHomeComponent,
-    UsersContentComponent
+    UsersContentComponent,
+    UsersDetailComponent
   ],
   imports: [
     BrowserModule,
