@@ -4,21 +4,21 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-cadastro-categorias',
   templateUrl: './cadastro-categorias.component.html',
-  styleUrls: ['./cadastro-categorias.component.css']
+  styleUrls: ['./cadastro-categorias.component.css'],
 })
 export class CadastroCategoriasComponent implements OnInit {
-  nomeCategoria:string = ''
+  nomeCategoria: string = '';
 
-  constructor(private _produtosService: ProdutosService) { }
+  constructor(private _produtosService: ProdutosService) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   cadastrarCategoria() {
     const params = {
       nomeCategoria: this.nomeCategoria,
-      tabela: 'categorias'
-    }
-  }
+      tabela: 'categorias',
+    };
 
+
+  }
 }
