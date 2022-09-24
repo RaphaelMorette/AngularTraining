@@ -10,9 +10,10 @@
       [(ngModel)]="user"
     />
     <p class="msgUser"></p>
-    <label for="floatingInput">E-mail</label>
+    <label for="floatingInput">Usuário</label>
   </div>
   <div class="form-floating">
+
     <input
       type="password"
       class="form-control form-control-lg"
@@ -24,9 +25,7 @@
     <label for="floatingPassword">Senha</label>
   </div>
   <br />
-  <button type="button" class="btn btn-primary btn-lg" (click)="entrar()">
-    Entrar
-  </button>
+  <button type="button" class="btn btn-primary btn-lg" (click)="logIn()">Entrar</button>
   <hr />
   <h5>Criar uma conta:</h5>
   <button type="button" class="btn btn-light btn-lg">Criar</button>

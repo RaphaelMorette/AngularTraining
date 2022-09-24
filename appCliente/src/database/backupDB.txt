@@ -1,0 +1,27 @@
+{
+  "usuarios": [
+    {
+      "username": "Raphael",
+      "senha": "123",
+      "acesso": "total"
+    },
+    {
+      "username": "Joao",
+      "senha": "123",
+      "acesso": "restrito"
+    }
+  ],
+
+  "clientes": [
+    {
+      "nome": "Marcos",
+      "telefone": "0000-0000",
+      "email": "marcos@teste.com",
+      "cep": "00000-000",
+      "endereco": "Rua teste",
+      "bairro": "Testando",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    }
+  ]
+}
