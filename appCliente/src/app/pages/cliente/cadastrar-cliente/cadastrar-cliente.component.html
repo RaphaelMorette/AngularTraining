@@ -38,21 +38,23 @@
       <div class="col-6">
         <label for="inputAddress" class="form-label">CEP</label>
         <input
-          type="number"
+          type="text"
           class="form-control"
           id="inputAddress"
           placeholder="00000111"
-          maxlength="8"
+          maxlength="9"
           [(ngModel)]="cep"
+          (blur)="buscarCep()"
         />
       </div>
       <div class="col-6">
-        <label for="inputAddress" class="form-label disabled">Endereço</label>
+        <label for="inputAddress" class="form-label">Endereço</label>
         <input
           type="text"
           class="form-control"
           id="inputAddress"
           placeholder="Rua exemplo"
+          disabled="true"
           [(ngModel)]="endereco"
         />
       </div>
@@ -63,6 +65,7 @@
           class="form-control"
           id="inputAddress"
           placeholder="Vila medeiros"
+          disabled="true"
           [(ngModel)]="bairro"
         />
       </div>
@@ -73,6 +76,7 @@
           class="form-control"
           id="inputAddress"
           placeholder="São Paulo"
+          disabled="true"
           [(ngModel)]="cidade"
         />
       </div>
@@ -83,6 +87,7 @@
           class="form-control"
           id="inputAddress"
           placeholder="SP"
+          disabled="true"
           [(ngModel)]="estado"
         />
       </div>
@@ -91,7 +96,7 @@
 
 
       <div class="col-12">
-        <button type="submit" class="btn btn-primary">
+        <button type="submit" class="btn btn-primary" (click)="Cadastrar()">
           Cadastrar
         </button>
       </div>
