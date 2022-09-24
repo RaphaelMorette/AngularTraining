@@ -1,3 +1,4 @@
+import { ClienteComponent } from './pages/cliente/cliente.component';
 import { LoginComponent } from './pages/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NgModule } from '@angular/core';
@@ -7,6 +8,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'clientes', component: ClienteComponent },
 ];
 
 @NgModule({

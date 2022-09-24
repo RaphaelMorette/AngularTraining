@@ -20,7 +20,7 @@ export class ClientsService {
     return this._http.delete<any>(this.urlApi + tabela + '/' + id);
   }
 
-  cadastrar(data: any): Observable<any> {
+  cadastro(data: any): Observable<any> {
     const params = {
       nome: data.nome,
       telefone: data.telefone,

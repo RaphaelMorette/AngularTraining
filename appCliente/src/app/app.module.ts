@@ -9,7 +9,8 @@ import { HeaderComponent } from './pages/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import {HttpClientModule} from '@angular/common/http';
-import { ClienteComponent } from './pages/cliente/cliente.component'
+import { ClienteComponent } from './pages/cliente/cliente.component';
+import { CadastrarClienteComponent } from './pages/cliente/cadastrar-cliente/cadastrar-cliente.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ClienteComponent } from './pages/cliente/cliente.component'
     HeaderComponent,
     HomeComponent,
     LoginComponent,
-    ClienteComponent
+    ClienteComponent,
+    CadastrarClienteComponent
   ],
   imports: [
     BrowserModule,

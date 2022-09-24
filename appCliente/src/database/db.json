@@ -1,11 +1,13 @@
 {
   "usuarios": [
     {
+      "id": 1,
       "username": "Raphael",
       "senha": "123",
       "acesso": "total"
     },
     {
+      "id": 2,
       "username": "Joao",
       "senha": "123",
       "acesso": "restrito"
@@ -14,10 +16,22 @@
 
   "clientes": [
     {
+      "id": 1,
       "nome": "Marcos",
       "telefone": "0000-0000",
       "email": "marcos@teste.com",
       "cep": "00000-000",
+      "endereco": "Rua teste",
+      "bairro": "Testando",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    {
+      "id": 2,
+      "nome": "Rodolfo",
+      "telefone": "1111-11111",
+      "email": "Rodolfo@teste.com",
+      "cep": "11111-111",
       "endereco": "Rua teste",
       "bairro": "Testando",
       "cidade": "São Paulo",
