@@ -29,7 +29,7 @@
       <td>{{ item.cidade }}</td>
       <td>{{ item.estado }}</td>
       <td class="acoesBtns">
-        <button class="btn btn-warning btn-sm" title="Editar">
+        <button class="btn btn-warning btn-sm" title="Editar" (click)="goAlterar(item.id)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"

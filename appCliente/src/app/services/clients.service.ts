@@ -42,7 +42,7 @@ export class ClientsService {
     return this._http.get<any>(this.urlApi + tabela + '/' + id);
   }
 
-  editar(data: any): Observable<any> {
+  edicao(data: any): Observable<any> {
     const params = {
       nome: data.nome,
       telefone: data.telefone,

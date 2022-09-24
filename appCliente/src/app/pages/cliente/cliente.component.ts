@@ -32,6 +32,10 @@ export class ClienteComponent implements OnInit {
     };
     this._clienteService.delete(params).subscribe((data) => {
       this.listagem();
-    })
+    });
+  }
+
+  goAlterar(id: number) {
+    this._router.navigate(['/editar-cliente', id]);
   }
 }

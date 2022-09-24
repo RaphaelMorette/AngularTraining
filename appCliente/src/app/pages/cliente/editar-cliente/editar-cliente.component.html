@@ -1,0 +1,105 @@
+<div class="content">
+  <h3 class="fw-light">Novo cliente</h3>
+
+  <div>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Nome</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Apelido"
+          id="inputEmail4"
+          size="30"
+          [(ngModel)]="nome"
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">telefone</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="0909-0808"
+          id="inputPassword4"
+          size="30"
+          [(ngModel)]="telefone"
+        />
+      </div>
+      <div class="col-6">
+        <label for="inputAddress" class="form-label">email</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputAddress"
+          placeholder="joao@gmail.com"
+          [(ngModel)]="email"
+        />
+      </div>
+      <div class="col-6">
+        <label for="inputAddress" class="form-label">CEP</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputAddress"
+          placeholder="00000111"
+          maxlength="9"
+          [(ngModel)]="cep"
+          (blur)="buscarCep()"
+        />
+      </div>
+      <div class="col-6">
+        <label for="inputAddress" class="form-label">Endereço</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputAddress"
+          placeholder="Rua exemplo"
+          disabled="true"
+          [(ngModel)]="endereco"
+        />
+      </div>
+      <div class="col-6">
+        <label for="inputAddress" class="form-label">Bairro</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputAddress"
+          placeholder="Vila medeiros"
+          disabled="true"
+          [(ngModel)]="bairro"
+        />
+      </div>
+      <div class="col-6">
+        <label for="inputAddress" class="form-label">Cidade</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputAddress"
+          placeholder="São Paulo"
+          disabled="true"
+          [(ngModel)]="cidade"
+        />
+      </div>
+      <div class="col-6">
+        <label for="inputAddress" class="form-label">Estado</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputAddress"
+          placeholder="SP"
+          disabled="true"
+          [(ngModel)]="estado"
+        />
+      </div>
+
+
+
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary" (click)="editar()">
+          Cadastrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

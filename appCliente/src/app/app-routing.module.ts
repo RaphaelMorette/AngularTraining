@@ -1,3 +1,4 @@
+import { EditarClienteComponent } from './pages/cliente/editar-cliente/editar-cliente.component';
 import { ClienteComponent } from './pages/cliente/cliente.component';
 import { LoginComponent } from './pages/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -9,6 +10,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent },
   { path: 'clientes', component: ClienteComponent },
+  { path: 'editar-cliente/:id', component: EditarClienteComponent },
 ];
 
 @NgModule({

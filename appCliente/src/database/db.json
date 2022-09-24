@@ -37,9 +37,9 @@
       "estado": "SP"
     },
     {
-      "nome": "Tesre",
-      "telefone": "0098-0809",
-      "email": "teste@gmail.com",
+      "nome": "Teste alterado",
+      "telefone": "1122-3344",
+      "email": "testeAlterado@gmail.com",
       "cep": "02074002",
       "endereco": "Rua do Imperador",
       "bairro": "Vila Paiva",
