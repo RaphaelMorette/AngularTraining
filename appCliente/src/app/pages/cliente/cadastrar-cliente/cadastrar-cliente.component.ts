@@ -22,6 +22,10 @@ export class CadastrarClienteComponent implements OnInit {
     private _clienteService: ClientsService
   ) {}
 
+
+  cepNaoEncontrado: boolean = false;
+
+
   ngOnInit(): void {}
 
   buscarCep() {

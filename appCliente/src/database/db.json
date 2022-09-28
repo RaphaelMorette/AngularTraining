@@ -37,15 +37,15 @@
       "estado": "SP"
     },
     {
-      "nome": "Teste alterado",
-      "telefone": "1122-3344",
-      "email": "testeAlterado@gmail.com",
+      "nome": "Teste1 Alterado",
+      "telefone": "5644-5644",
+      "email": "teste@gmail.com",
       "cep": "02074002",
       "endereco": "Rua do Imperador",
       "bairro": "Vila Paiva",
       "cidade": "São Paulo",
       "estado": "SP",
-      "id": 3
+      "id": 4
     }
   ]
 }
