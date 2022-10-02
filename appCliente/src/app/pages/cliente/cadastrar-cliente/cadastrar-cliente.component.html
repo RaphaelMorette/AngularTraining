@@ -46,8 +46,9 @@
           [(ngModel)]="cep"
           (blur)="buscarCep()"
         />
+        <small *ngIf="cepNaoEncontrado" style="color: red;">Teste</small>
       </div>
-      <div class="classesToAply">
+      <div [class]="classesToApply">
         <div class="col-6">
           <label for="inputAddress" class="form-label">Endereço</label>
           <input

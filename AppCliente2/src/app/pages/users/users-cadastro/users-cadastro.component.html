@@ -1,0 +1,138 @@
+<app-header></app-header>
+
+<div class="content">
+  <h3 class="fw-light">Novo cliente</h3>
+
+  <div>
+    <div class="row g-3">
+      <div class="form-floating col-md-6">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Joaquim"
+          [(ngModel)]="formUsuario.nome"
+        />
+        <label for="floatingInput">Nome</label>
+      </div>
+
+      <div class="form-floating col-md-6">
+        <input
+          type="password"
+          class="form-control"
+          placeholder="Senha"
+          [(ngModel)]="formUsuario.senha"
+        />
+        <label for="floatingPassword">Senha</label>
+      </div>
+
+      <div class="form-floating col-md-6">
+        <input
+          type="email"
+          class="form-control"
+          placeholder="Senha"
+          [(ngModel)]="formUsuario.email"
+        />
+        <label for="floatingPassword">E-mail</label>
+      </div>
+
+      <div class="form-floating col-md-6">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Senha"
+          [(ngModel)]="formUsuario.acesso"
+        />
+        <label for="floatingPassword">Acesso</label>
+      </div>
+
+      <div class="form-floating col-md-6">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Senha"
+          [(ngModel)]="formUsuario.telefones.residencial"
+        />
+        <label for="floatingPassword">Telefone Residencial</label>
+      </div>
+
+      <div class="form-floating col-md-6">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Senha"
+          [(ngModel)]="formUsuario.telefones.celular"
+        />
+        <label for="floatingPassword">Telefone celular</label>
+      </div>
+
+      <div class="form-floating col-md-6">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Senha"
+          [(ngModel)]="formUsuario.enderecos.cep"
+          (blur)="buscarCep($event)"
+        />
+        <label for="floatingPassword">CEP</label>
+        <small *ngIf="cepNaoEncontrado" style="color: red"
+          >CEP não encontrado, coloque um CEP válido!</small
+        >
+      </div>
+      <div [class]="classToApply">
+        <div class="row g-3">
+          <div class="form-floating col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Senha"
+              [(ngModel)]="formUsuario.enderecos.logradouro"
+              disabled
+            />
+            <label for="floatingPassword">Logradouro</label>
+          </div>
+
+          <div class="form-floating col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Senha"
+              [(ngModel)]="formUsuario.enderecos.bairro"
+              disabled
+            />
+            <label for="floatingPassword">Bairro</label>
+          </div>
+
+          <div class="form-floating col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Senha"
+              [(ngModel)]="formUsuario.enderecos.cidade"
+              disabled
+            />
+            <label for="floatingPassword">Cidade</label>
+          </div>
+
+          <div class="form-floating col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Senha"
+              [(ngModel)]="formUsuario.enderecos.estado"
+              disabled
+            />
+            <label for="floatingPassword">Estado</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary" (click)="cadastro()">
+          Cadastrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

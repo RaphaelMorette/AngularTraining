@@ -11,7 +11,10 @@ import { LoginComponent } from './pages/login/login.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ClienteComponent } from './pages/cliente/cliente.component';
 import { CadastrarClienteComponent } from './pages/cliente/cadastrar-cliente/cadastrar-cliente.component';
-import { EditarClienteComponent } from './pages/cliente/editar-cliente/editar-cliente.component'
+import { EditarClienteComponent } from './pages/cliente/editar-cliente/editar-cliente.component';
+import { UsersComponent } from './pages/users/users.component';
+import { UsersContentComponent } from './pages/users/users-content/users-content.component';
+import { UsersDetailComponent } from './pages/users/users-detail/users-detail.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { EditarClienteComponent } from './pages/cliente/editar-cliente/editar-cl
     LoginComponent,
     ClienteComponent,
     CadastrarClienteComponent,
-    EditarClienteComponent
+    EditarClienteComponent,
+    UsersComponent,
+    UsersContentComponent,
+    UsersDetailComponent
   ],
   imports: [
     BrowserModule,

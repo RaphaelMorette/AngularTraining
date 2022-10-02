@@ -1,0 +1,12 @@
+.content {
+  margin: 50px;
+}
+
+.noShow {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+

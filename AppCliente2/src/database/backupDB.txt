@@ -1,0 +1,107 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Raphael",
+      "telefones": {
+        "residencial": "0000-0000",
+        "celular": "00000-0000"
+      },
+      "enderecos": {
+        "cep": "02074002",
+        "logradouro": "Rua do Imperador",
+        "bairro": "Vila Paiva",
+        "cidade": "São Paulo",
+        "estado": "SP"
+      },
+      "email": "Raphael.morette@foursys.com.br",
+      "senha": "123",
+      "acesso": "total"
+    },
+    {
+      "id": 2,
+      "nome": "Joao",
+      "telefones": {
+        "residencial": "0000-0000",
+        "celular": "00000-0000"
+      },
+      "enderecos": {
+        "cep": "02074002",
+        "logradouro": "Rua do Imperador",
+        "bairro": "Vila Paiva",
+        "cidade": "São Paulo",
+        "estado": "SP"
+      },
+      "email": "Joao@foursys.com.br",
+      "senha": "123",
+      "acesso": "restrito"
+    }
+  ],
+  "clientes": [
+    {
+      "id": 1,
+      "nome": "Marcos",
+      "telefones": {
+        "residencial": "0000-0000",
+        "comercial": "0000-0000",
+        "celular": "00000-0000"
+      },
+      "email": "marcos@teste.com",
+      "enderecos": {
+        "cep": "00000-000",
+        "logradouro": "Rua teste",
+        "bairro": "Testando",
+        "cidade": "São Paulo",
+        "estado": "SP"
+      },
+      "documentos": {
+        "rg": "02.000.020-2",
+        "cpf": "123.465.456-45"
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Rodolfo",
+      "telefones": {
+        "residencial": "0000-0000",
+        "comercial": "0000-0000",
+        "celular": "00000-0000"
+      },
+      "email": "Rodolfo@teste.com",
+      "enderecos": {
+        "cep": "00000-000",
+        "logradouro": "Rua teste",
+        "bairro": "Testando",
+        "cidade": "São Paulo",
+        "estado": "SP"
+      },
+      "documentos": {
+        "rg": "02.000.020-2",
+        "cpf": "123.465.456-45"
+      }
+    }
+  ],
+  "fornecedores": [
+    {
+      "id":1,
+      "nome": "Fornecedor",
+      "telefones": {
+        "comercial": "0000-0000",
+        "celular": "00000-0000"
+      },
+      "email": "fornecedor@gmail.com",
+      "website": "fornecedor.com.br",
+      "enderecos": {
+        "cep": "00000-000",
+        "logradouro": "Rua teste",
+        "bairro": "Testando",
+        "cidade": "São Paulo",
+        "estado": "SP"
+      },
+      "documentos": {
+        "cnpj": "0000000000000000",
+        "inscricaoEstadual": "4654546454646"
+      }
+    }
+  ]
+}

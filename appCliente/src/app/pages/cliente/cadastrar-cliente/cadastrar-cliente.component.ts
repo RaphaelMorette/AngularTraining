@@ -22,14 +22,24 @@ export class CadastrarClienteComponent implements OnInit {
     private _clienteService: ClientsService
   ) {}
 
-
   cepNaoEncontrado: boolean = false;
 
+  classesToApply: string = 'noShow';
 
   ngOnInit(): void {}
 
   buscarCep() {
     this._cepService.getCep(this.cep).subscribe((data) => {
+      if (data.erro) {
+        this.classesToApply = 'noShow';
+        this.cepNaoEncontrado = true;
+        setTimeout(() => {
+          this.cepNaoEncontrado = false;
+          this.cep = '';
+        }, 3000);
+        return;
+      }
+      this.classesToApply = 'show';
       this.endereco = data.logradouro;
       this.bairro = data.bairro;
       this.cidade = data.localidade;
