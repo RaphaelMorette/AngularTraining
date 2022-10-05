@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
 import { HeaderComponent } from './pages/header/header.component';
 import { FooterComponent } from './pages/footer/footer.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { HomeComponent } from './pages/home/home.component';
 import { UsersContentComponent } from './pages/users/users-content/users-content.component';
@@ -18,6 +18,7 @@ import { ClienteEditarComponent } from './pages/clientes/cliente-editar/cliente-
 import { FornecedorContentComponent } from './pages/fornecedores/fornecedor-content/fornecedor-content.component';
 import { FornecedorCadastroComponent } from './pages/fornecedores/fornecedor-cadastro/fornecedor-cadastro.component';
 import { FornecedorEditarComponent } from './pages/fornecedores/fornecedor-editar/fornecedor-editar.component';
+import { ProdutosCadastroComponent } from './pages/produtos/produtos-cadastro/produtos-cadastro.component';
 
 @NgModule({
   declarations: [
@@ -35,12 +36,14 @@ import { FornecedorEditarComponent } from './pages/fornecedores/fornecedor-edita
     FornecedorContentComponent,
     FornecedorCadastroComponent,
     FornecedorEditarComponent,
+    ProdutosCadastroComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

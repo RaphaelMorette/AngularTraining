@@ -1,3 +1,4 @@
+import { ProdutosCadastroComponent } from './pages/produtos/produtos-cadastro/produtos-cadastro.component';
 import { FornecedorEditarComponent } from './pages/fornecedores/fornecedor-editar/fornecedor-editar.component';
 import { FornecedorCadastroComponent } from './pages/fornecedores/fornecedor-cadastro/fornecedor-cadastro.component';
 import { ClienteEditarComponent } from './pages/clientes/cliente-editar/cliente-editar.component';
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'fornecedor', component: FornecedorContentComponent },
   { path: 'fornecedor-cadastro', component: FornecedorCadastroComponent },
   { path: 'fornecedor-editar/:id', component: FornecedorEditarComponent },
+  { path: 'produtos-cadastro', component: ProdutosCadastroComponent },
 ];
 
 @NgModule({

@@ -1,0 +1,135 @@
+<app-header></app-header>
+<div class="margin-content">
+  <h3 class="fw-light py-3">Produtos | Cadastro</h3>
+  <form class="row g-3" [formGroup]="formProdutos" (ngSubmit)="goSalvar()">
+    <div class="col-md-12">
+      <label for="inputEmail4" class="form-label">Nome</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputEmail4"
+        formControlName="nome"
+      />
+      <div
+        *ngIf="formProdutos.get('nome')?.errors?.['required'] && formProdutos.get('nome')?.touched"
+      >
+        <small
+          style="
+            color: red;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 10px;
+          "
+          >Campo nome obrigatório</small
+        >
+      </div>
+    </div>
+
+    <div class="col-3">
+      <label for="inputMarca" class="form-label">Marca</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputMarca"
+        formControlName="marca"
+      />
+      <div
+        *ngIf="formProdutos.get('marca')?.errors?.['required'] && formProdutos.get('marca')?.touched"
+      >
+        <small
+          style="
+            color: red;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 10px;
+          "
+          >Campo marca obrigatório</small
+        >
+      </div>
+    </div>
+
+    <div class="col-3">
+      <label for="inputTipo" class="form-label">Tipo</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputTipo"
+        formControlName="tipo"
+      />
+      <div
+        *ngIf="formProdutos.get('tipo')?.errors?.['required'] && formProdutos.get('tipo')?.touched"
+      >
+        <small
+          style="
+            color: red;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 10px;
+          "
+          >Campo tipo obrigatório</small
+        >
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <label for="inputPreco" class="form-label">Preço</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputMarca"
+        formControlName="preco"
+      />
+      <div
+        *ngIf="formProdutos.get('preco')?.errors?.['required'] && formProdutos.get('preco')?.touched"
+      >
+        <small
+          style="
+            color: red;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 10px;
+          "
+          >Campo preço obrigatório</small
+        >
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <label for="inputTelefone" class="form-label">Telefone</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputTelefone"
+        formControlName="residencial"
+      />
+      <div
+        *ngIf="formProdutos.get('telefone')?.get('residencial')?.errors?.['required'] && formProdutos.get('telefone')?.get('residencial')?.touched"
+      >
+        <small
+          style="
+            color: red;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 10px;
+          "
+          >Campo telefone obrigatório</small
+        >
+      </div>
+    </div>
+
+    <div class="col-12 py-3">
+      <button
+        type="submit"
+        class="btn btn-primary"
+        style="margin-right: 10px"
+        [disabled]="!formProdutos.valid"
+      >
+        Salvar
+      </button>
+      <button type="submit" class="btn btn-dark" routerLink="/users">
+        Voltar
+      </button>
+    </div>
+  </form>
+</div>
+<app-footer></app-footer>
