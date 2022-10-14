@@ -1,0 +1,153 @@
+<app-header></app-header>
+
+<div class="content">
+  <h3 class="fw-light">Novo Cliente</h3>
+
+  <div>
+    <div class="row g-3">
+      <div class="form-floating col-md-6">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Joaquim"
+          [(ngModel)]="formCliente.nome"
+        />
+        <label for="floatingInput">Nome</label>
+      </div>
+
+      <div class="form-floating col-md-6">
+        <input
+          type="email"
+          class="form-control"
+          placeholder="Senha"
+          [(ngModel)]="formCliente.email"
+        />
+        <label for="floatingPassword">E-mail</label>
+      </div>
+
+      <div class="mb-3 row col-md-6">
+        <label>Tipo plano</label>
+        <div
+          class="btn-group"
+          role="group"
+          aria-label="Basic radio toggle button group"
+        >
+          <input
+            type="radio"
+            class="btn-check"
+            name="btnradioTipoPlano"
+            id="btnradioTipoPlano1"
+            autocomplete="off"
+            value="mensal"
+            [(ngModel)]="formCliente.tipoPlano"
+            checked
+          />
+          <label class="btn btn-outline-primary" for="btnradioTipoPlano1"
+            >Mensal</label
+          >
+
+          <input
+            type="radio"
+            class="btn-check"
+            name="btnradioTipoPlano"
+            id="btnradioTipoPlano2"
+            autocomplete="off"
+            value="bimestral"
+            [(ngModel)]="formCliente.tipoPlano"
+          />
+          <label class="btn btn-outline-primary" for="btnradioTipoPlano2">Bimestral</label>
+
+          <input
+            type="radio"
+            class="btn-check"
+            name="btnradioTipoPlano"
+            id="btnradioTipoPlano3"
+            autocomplete="off"
+            value="trimestral"
+            [(ngModel)]="formCliente.tipoPlano"
+          />
+          <label class="btn btn-outline-primary" for="btnradioTipoPlano3">Trimestral</label>
+        </div>
+      </div>
+
+      <div class="form-floating col-md-6">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Senha"
+          [(ngModel)]="formCliente.telefone"
+        />
+        <label for="floatingPassword">Telefone</label>
+      </div>
+
+      <div class="form-floating col-md-6">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Senha"
+          [(ngModel)]="formCliente.cep"
+          (blur)="buscarCep($event)"
+        />
+        <label for="floatingPassword">CEP</label>
+        <small *ngIf="cepNaoEncontrado" style="color: red"
+          >CEP não encontrado, coloque um CEP válido!</small
+        >
+      </div>
+      <div [class]="classToApply">
+        <div class="row g-3">
+          <div class="form-floating col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Senha"
+              [(ngModel)]="formCliente.logradouro"
+              disabled
+            />
+            <label for="floatingPassword">Logradouro</label>
+          </div>
+
+          <div class="form-floating col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Senha"
+              [(ngModel)]="formCliente.bairro"
+              disabled
+            />
+            <label for="floatingPassword">Bairro</label>
+          </div>
+
+          <div class="form-floating col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Senha"
+              [(ngModel)]="formCliente.cidade"
+              disabled
+            />
+            <label for="floatingPassword">Cidade</label>
+          </div>
+
+          <div class="form-floating col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Senha"
+              [(ngModel)]="formCliente.estado"
+              disabled
+            />
+            <label for="floatingPassword">Estado</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary" (click)="cadastro()">
+          Cadastrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,81 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Raphael",
+      "telefone": "00000-0000",
+      "email": "Raphael.morette@foursys.com.br",
+      "senha": "123",
+      "funcao": "instrutor",
+      "acesso": "total",
+      "cep": "02074002",
+      "logradouro": "Rua do Imperador",
+      "bairro": "Vila Paiva",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    {
+      "id": 2,
+      "nome": "Joao Pedro",
+      "telefone": "1111-1111",
+      "email": "Joao@foursys.com.br",
+      "senha": "1234",
+      "funcao": "usuario",
+      "acesso": "restrito",
+      "cep": "02074002",
+      "logradouro": "Rua do Imperador",
+      "bairro": "Vila Paiva",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    {
+      "id": 3,
+      "nome": "Paulo",
+      "telefone": "0000-0000",
+      "email": "Paulo@gmail.com",
+      "senha": "1234",
+      "funcao": "usuario",
+      "acesso": "restrito",
+      "cep": "02074002",
+      "logradouro": "Rua do Imperador",
+      "bairro": "Vila Paiva",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    }
+  ],
+  "clientes": [
+    {
+      "id": 1,
+      "nome": "Marcos",
+      "tipoPlano": "mensal",
+      "telefone": "00000-0000",
+      "email": "marcos@teste.com",
+      "cep": "00000-000",
+      "logradouro": "Rua teste",
+      "bairro": "Testando",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    {
+      "id": 2,
+      "nome": "Rodolfo",
+      "tipoPlano": "trimestral",
+      "telefone": "00000-0000",
+      "email": "rodolfo@teste.com",
+      "cep": "00000-000",
+      "logradouro": "Rua teste",
+      "bairro": "Testando",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    }
+  ],
+  "modalidades": [
+    {
+      "id": 1,
+      "modalidade": "musculação",
+      "turno": "manhã",
+      "horarioDe": "08:00",
+      "horarioAte": "09:00"
+    }
+  ]
+}
